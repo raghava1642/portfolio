@@ -1426,6 +1426,15 @@ header {
   #projects {
     margin: 0 auto;
     justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-center-form {
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 }
 

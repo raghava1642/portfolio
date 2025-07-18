@@ -1051,6 +1051,9 @@ header {
     width: 110px;
     height: 110px;
     margin-left: 0;
+    margin-right: 0;
+    display: block;
+    margin: 0 auto 0 auto;
   }
   .main-header-content {
     align-items: center;
@@ -1061,6 +1064,21 @@ header {
     text-align: center;
     width: 100%;
     word-break: break-word;
+  }
+  #projects {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .project-thumbnail {
+    width: 90vw;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .thumbnail-content img {
+    max-width: 90vw;
+    width: 100%;
+    height: auto;
   }
 }
 @media only screen and (max-width: 600px) {

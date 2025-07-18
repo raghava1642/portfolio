@@ -1355,8 +1355,8 @@ header {
     padding: 0 4vw;
   }
   .main-profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
     margin-left: 0;
     margin-right: 0;
     display: block;
@@ -1367,7 +1367,9 @@ header {
     margin: 0 auto;
     width: 100%;
   }
-  .main-header-content .main-title,
+  .main-header-content .main-title {
+    font-size: 0.85em;
+  }
   .main-header-content .main-intro {
     text-align: center;
   }
@@ -1418,4 +1420,11 @@ header {
   text-overflow: ellipsis;
   display: flex;
   align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+  #projects {
+    margin: 0 auto;
+    justify-content: center;
+  }
 }

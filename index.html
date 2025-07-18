@@ -27,42 +27,78 @@
         </div>
         </div>
     </nav>
-    <header> 
-        <img id="Home" src="port-pic.webp" alt="Raghava's pic"></img>
-        <h1>I am Raghavendra Vellaturi, a <span class="about-me"></span></h1>
-        <p id="correction">Aspiring Full Stack Developer with a strong passion for technology and a dedication to excellence. Enthusiastic about learning and adapting to emerging technologies while continuously enhancing my skills. Committed to delivering intelligent and diligent solutions to contribute effectively to organizational growth</p>
-
+    <header style="text-align:center; position:relative;">
+        <div class="main-gradient-left"></div>
+        <div class="main-gradient-right"></div>
+        <div class="main-flex-header">
+            <img id="Home" src="port-pic.webp" alt="Raghava's pic" class="main-profile-pic">
+            <div class="main-header-content">
+                <h1 class="main-title">
+                    I am&nbsp;<span class="main-name">Raghavendra Vellaturi</span>,&nbsp <span class="main-about about-me"><i class="fas fa-code"></i></span>
+                </h1>
+                <p id="correction" class="main-intro">Aspiring Full Stack Developer with a strong passion for technology, dedicated to excellence and continuous learning. I believe in writing clean, maintainable code and enjoy collaborating to solve real-world problems. Driven by curiosity and creativity, I am eager to contribute to innovative projects and grow with talented teams in a dynamic environment.</p>
+            </div>
+        </div>
     </header>
         <hr/>
         <section>
-            <h1 id="about">About Me</h1>
-            <h3>Education</h3>
-            <p style="font-family:Arial, Helvetica, sans-serif ;">Hi! I’m Raghavendra, a recent B.Tech graduate in Artificial Intelligence and Data Science from Vasireddy Venkatadri Institute of Technology (Class of 2025) with a CGPA of 8.2/10. I am passionate about building dynamic and user-friendly web applications and am looking to establish my career as a Full Stack Developer. My core skills include the MERN stack (MongoDB, Express.js, React.js, Node.js) along with strong knowledge of Python, SQL, and Java. I’m driven by curiosity and a constant desire to learn and grow in the ever-evolving tech landscape.</p>
-            <h3>Work Experience</h3>
-            <h4><bold>1. Pronexus</bold></h4>
-            <p>MERN stack Intern at pronexus orgainsation contributing for it</p>
-            <h4><bold>2. Unified Mentor</bold></h4>
-            <p>Full Stack Developer Intern at Unified Mentor Organization (Jan 2025 - Mar 2025): Developed a responsive web application using Html,css and javascript"</p>
-            <h3 id="my-hobbies">Hobbies</h3>
-            <div class="hobbie-list"></div>
-            <ul class="hobbie-list">
-                <li>Watching TED X Talks</li>
-                <li>Reading Blogs</li>
-                <li>Listening Music</li>
-                <li>Watching movies</li>
-            </ul>
+            <h1 id="about"><span class="section-icon"><i class="fas fa-user"></i></span> About Me</h1>
+            <div class="about-container">
+                <div class="about-card">
+                    <div class="about-row">
+                        <div class="about-icon"><i class="fas fa-user-graduate"></i></div>
+                        <div>
+                            <h3>Education <span class="badge">🎓</span></h3>
+                            <div class="edu-main"><strong>B.Tech in AI & Data Science</strong></div>
+                            <div class="edu-school">Vasireddy Venkatadri Institute of Technology <span class="badge">2021–2025</span></div>
+                            <div class="edu-cgpa">CGPA: <span class="highlight">8.2/10</span></div>
+                            <div class="edu-desc">Curious, driven, and passionate about building user-friendly web apps.</div>
+                        </div>
+                    </div>
+                    <div class="about-row work-experience">
+                        <div class="about-icon"><i class="fas fa-briefcase"></i></div>
+                        <div>
+                            <h3>Work Experience <span class="badge">💼</span></h3>
+                            <div class="work-item">
+                                <span class="badge">MERN Stack Intern</span> — <strong>Pronexus</strong><br>
+                                <span class="work-desc">Contributed to real-world projects, collaborating in a fast-paced team.</span>
+                            </div>
+                            <div class="work-item">
+                                <span class="badge">Full Stack Developer Intern</span> — <strong>Unified Mentor</strong> <span class="badge">Jan–Mar 2025</span><br>
+                                <span class="work-desc">Developed a responsive web app using HTML, CSS, and JavaScript.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-row">
+                        <div class="about-icon"><i class="fas fa-heart"></i></div>
+                        <div>
+                            <h3 id="my-hobbies">Hobbies <span class="badge">✨</span></h3>
+                            <div class="hobbies-subtitle">What I love to do in my free time:</div>
+                            <ul class="hobbie-list attractive-hobbies hobbies-flex">
+                                <li><span class="hobby-chip">🎤 Watching TEDx Talks</span></li>
+                                <li><span class="hobby-chip">📖 Reading Tech Blogs</span></li>
+                                <li><span class="hobby-chip">🎧 Listening to Music</span></li>
+                                <li><span class="hobby-chip">🎬 Movie Buff</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <hr>
         <section>
-            <h2 id="my-skill">My Skills</h2>
-            <div class="skill-list">
-            <ul class="skill-list">
-            <li>Web Development(MERN)</li>
-            <li>SQL</li>
-            <li >Python</li>
-            <li>Java</li>
+            <h2 id="my-skill"><span class="section-icon"><i class="fas fa-tools"></i></span> My Skills</h2>
+            <div class="skills-subtitle">Technologies and languages I work with:</div>
+            <ul class="skill-list skills-flex">
+                <li><span class="skill-chip"><i class="fab fa-js-square"></i> JavaScript</span></li>
+                <li><span class="skill-chip"><i class="fab fa-react"></i> React.js</span></li>
+                <li><span class="skill-chip"><i class="fab fa-node-js"></i> Node.js</span></li>
+                <li><span class="skill-chip"><i class="fas fa-database"></i> MongoDB</span></li>
+                <li><span class="skill-chip"><i class="fas fa-server"></i> Express.js</span></li>
+                <li><span class="skill-chip"><i class="fas fa-code"></i> SQL</span></li>
+                <li><span class="skill-chip"><i class="fab fa-python"></i> Python</span></li>
+                <li><span class="skill-chip"><i class="fab fa-java"></i> Java</span></li>
             </ul>
-            </div>
         </section>
         <section class="horizantal-scroll">
             <div class="icon-container">
@@ -81,23 +117,23 @@
         <hr>
 
         <section id="programming-languages">
-            <h2>Programming Languages</h2>
+            <h2><span class="section-icon"><i class="fas fa-code"></i></span> Programming Languages</h2>
             <div class="arrange">
-            <div class="skill">
-                <p>HTML</p>
-                <div class="progress-bar" data-progress="90">90</div>
-            </div>
-            <div class="skill">
-                <p>CSS</p>
-                <div class="progress-bar" data-progress="80">80</div>
-            </div>
-            <div class="skill">
-                <p>JavaScript</p>
-                <div class="progress-bar" data-progress="60">60</div>
-            </div>
-            <div class="skill">
-                <p>python</p>
-                <div class="progress-bar" data-progress="70">70</div>
+                <div class="skill">
+                    <p>HTML</p>
+                    <div class="progress-bar" data-progress="90">90</div>
+                </div>
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="progress-bar" data-progress="80">80</div>
+                </div>
+                <div class="skill">
+                    <p>JavaScript</p>
+                    <div class="progress-bar" data-progress="60">60</div>
+                </div>
+                <div class="skill">
+                    <p>python</p>
+                    <div class="progress-bar" data-progress="70">70</div>
                 </div>
                 <div class="skill">
                     <p>Java</p>
@@ -107,20 +143,19 @@
                     <p>SQL</p>
                     <div class="progress-bar" data-progress="70">70</div>
                 </div>
-            
-        </div>
+            </div>
         </section>
         <hr>
         <section>
-            <h2 id="my-projects">My Projects</h2>
-            <h3>Take a look of my works.</h3>
+            <h2 id="my-projects"><span class="section-icon"><i class="fas fa-project-diagram"></i></span> My Projects</h2>
+            <div class="projects-subtitle">A selection of my recent work:</div>
             <section id="projects">
                 <div class="project-thumbnail">
                     <div class="thumbnail-content">
                         <img src="icon/skillsync.jpeg" alt="project 1">
                         <h3>Skill Sync</h3>
                         <p>To close Educational gaps by using conversational AI </p>
-                        <a href="https://github.com/raghava1642/Skillsync" target="_blank" class="btn">know more</a>
+                        <a href="https://github.com/raghava1642/Skillsync" target="_blank" class="btn project-btn">know more</a>
                     </div>
                 </div>
                 <div class="project-thumbnail">
@@ -128,44 +163,42 @@
                         <img src="icon/Medcare Nexus.png" alt="project 2">
                         <h3>MedCare Nexus </h3>
                         <p>It is used to provide the advancements in the healthcare sector by using digitalization</p>
-                        <a href="https://github.com/raghava1642/MedCare-Nexus" target="_blank" class="btn">know more</a>
-
+                        <a href="https://github.com/raghava1642/MedCare-Nexus" target="_blank" class="btn project-btn">know more</a>
                     </div>
-                    
                 </div>
-
             </section>
         </section>
         <hr>
 
         <section>
-            <h2 id="my-contact">Contact me</h2>
-            
-            <form>
+            <h2 id="my-contact"><span class="section-icon"><i class="fas fa-envelope-open-text"></i></span> Contact Me</h2>
+            <div class="contact-subtitle">I'd love to hear from you! Fill out the form or reach out directly:</div>
+            <form class="contact-center-form">
                 <div class="form-group">
                     <label for="name" >Name:</label>
                     <input type="text" id="name" name="name" placeholder="your name">
                 </div>
                 <div class="form-group">
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" placeholder="your mail"><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="your mail">
                 </div>
                 <div class="form-group">
-                    <label for="message">Message:</label><br>
+                    <label for="message">Message:</label>
                     <textarea id="message" name="message" placeholder="your message"></textarea>
                 </div>
-                <button type="submit">Send</button>
-                
+                <button type="submit" class="contact-btn">Send</button>
             </form>
+            <div class="contact-divider"><span>or</span></div>
+            <div class="contact-info contact-center-info">
+                <div class="contact-info-title">Connect with me directly:</div>
+                <a href="mailto:raghavendravellaturi08@gmail.com" class="icon-link email-icon"><i class="fas fa-envelope"></i> raghavendravellaturi08@gmail.com</a>
+                <a href="https://www.linkedin.com/in/vellaturi-raghavendra-007b8a269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="icon-link linkedin-icon"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
         </section>
-        <section>
-            <h2>Contact Information</h2>
-            <p>Let's Connect</p>
-            <a href="mailto:raghavendravellaturi08@gmail.com" class="icon-link email-icon"><i class="fas fa-envelope"></i></a>  
-                 <a  href="https://www.linkedin.com/in/vellaturi-raghavendra-007b8a269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="icon-link linkedin-icon"><i class="fab fa-linkedin"></i> </a>
-            </section>
         <footer>
-            <p>&copy; 2025 Raghava. All Rights Reserved </p>
+            <p>&copy; 2025 Raghavendra Vellaturi. All rights reserved. Made with <span style="color:#f9620b;">&#10084;&#65039;</span> | Connect on 
+                <a href="https://www.linkedin.com/in/vellaturi-raghavendra-007b8a269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="color:#fff;text-decoration:underline;">LinkedIn</a>
+            </p>
         </footer>
         
         

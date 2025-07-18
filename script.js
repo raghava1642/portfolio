@@ -2,7 +2,7 @@ function changeAboutMyText() {
   const aboutMeTexts = [
     "Learner",
     "Tech Enthusiast",
-    "Full Stack Web Developer" 
+    "Full Stack Developer" 
   ];
   const typingSpeed = 100;
   const erasingSpeed = 50;

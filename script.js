@@ -1,9 +1,5 @@
 function changeAboutMyText() {
-  const aboutMeTexts = [
-    "Learner",
-    "Tech Enthusiast",
-    "Full Stack Developer" 
-  ];
+  const aboutMeTexts = ["Learner", "Tech Enthusiast", "Full Stack Developer"];
   const typingSpeed = 100;
   const erasingSpeed = 50;
   const pauseTime = 1500;
@@ -21,7 +17,7 @@ function changeAboutMyText() {
       charIndex++;
       setTimeout(type, typingSpeed);
     } else if (isDeleting && charIndex > 0) {
-    /* erasing*/
+      /* erasing*/
       aboutMeElement.textContent = currentText.substring(0, charIndex - 1);
       charIndex--;
       setTimeout(type, erasingSpeed);
@@ -36,35 +32,43 @@ function changeAboutMyText() {
   type();
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const darkModeToggle = document.getElementById("dark-mode-toggle");
+  const body = document.body;
+  const navToggle = document.querySelector(".nav-toggle");
+  const navMenu = document.querySelector(".nav-menu");
 
-document.addEventListener('DOMContentLoaded',function(){
-    const darkModeToggle = document.getElementById('dark-mode-toggle');
-    const body = document.body;
+  darkModeToggle.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    const currentMode = body.classList.contains("dark-mode") ? "Dark" : "Light";
+    darkModeToggle.querySelector("i").classList.toggle("fa-sun");
+    darkModeToggle.querySelector("i").classList.toggle("fa-moon");
+    darkModeToggle.querySelector("i").classList.toggle("light-mode");
+  });
 
-    darkModeToggle.addEventListener('click',()=>{
-        body.classList.toggle('dark-mode');
-        const currentMode = body.classList.contains('dark-mode')?'Dark' : 'Light';
-        darkModeToggle.querySelector('i').classList.toggle('fa-sun');
-        darkModeToggle.querySelector('i').classList.toggle('fa-moon');
-        darkModeToggle.querySelector('i').classList.toggle('light-mode');
-    });
+  // Mobile navbar toggle
+  navToggle.addEventListener("click", function () {
+    navMenu.classList.toggle("active");
+  });
 });
 changeAboutMyText();
 
-document.addEventListener('DOMContentLoaded', function () {
-    const observer = new IntersectionObserver(entries =>{
-        entries.forEach(entry => {
-            if (entry.isIntersecting){
-                const progressBar = entry.target.querySelector('.progress-bar');
-                const progress = progressBar.dataset.progress;
-                progressBar.style.setProperty('--progress', `${progress}%`);
-                progressBar.classList.add('animated');
-                observer.unobserve(entry.target);
-            }
-        });
+document.addEventListener("DOMContentLoaded", function () {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const progressBar = entry.target.querySelector(".progress-bar");
+        const progress = progressBar.dataset.progress;
+        progressBar.style.setProperty("--progress", `${progress}%`);
+        progressBar.classList.add("animated");
+        observer.unobserve(entry.target);
+      }
     });
-    const programmingLanguages = document.querySelectorAll('#programming-languages .skill');
-    programmingLanguages.forEach(skill =>{
-        observer.observe(skill);
-    });
+  });
+  const programmingLanguages = document.querySelectorAll(
+    "#programming-languages .skill"
+  );
+  programmingLanguages.forEach((skill) => {
+    observer.observe(skill);
+  });
 });
